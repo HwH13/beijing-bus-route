@@ -9,7 +9,7 @@ beijing_bus.py 根据 xianming.py获取的北京公交线名，从*高德地图*
 2.1 xianming.py
 -
 输入：
-**all_url**参数为访问的网站，以北京为例，访问网址为'https://beijing.8684.cn/'，其中城市名可更改来获取不同城市的公交线路名，例如：'https://chongqing.8684.cn/'。
+**all_url**参数为访问的网站，以北京为例，访问网址为'https://beijing.8684.cn/' ，其中城市名可更改来获取不同城市的公交线路名，例如：'https://chongqing.8684.cn/'。
 输出：
 程序运行结束会生成**Network_bus.txt**文本文件，文件中记录了城市包含的公交线路名。
 
