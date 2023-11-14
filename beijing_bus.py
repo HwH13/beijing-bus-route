@@ -45,7 +45,7 @@ ee = 0.00669342162296594323  # 扁率
 path = "Network_bus.txt"
 cityname = '北京'
 fangxiang = 0
-
+key = ''  # key 较为重要，此处不提供，可自行在高德地图申请
 with open(path, "r") as f:
     for xm in f.readlines():
         xm = xm.replace('\n', '').replace("['",'').replace("']","").replace("'","")
@@ -63,7 +63,7 @@ for k in range(len(xm)-1):
     aarray = []
     barray = []
     line = xm[k]
-    key = '' #key 较为重要，此处不提供，可自行在高德地图申请
+
     url = 'https://restapi.amap.com/v3/bus/linename?s=rsv3&extensions=all&key={}=json&city={}&offset=0&keywords={}&platform=JS'.format(cityname,key,line)
     r = requests.get(url).text
     rt = json.loads(r)
