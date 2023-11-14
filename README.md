@@ -26,7 +26,8 @@ beijing_bus.py 根据 xianming.py获取的北京公交线名，从*高德地图*
 
 3 程序运行
 =
-我提供了一份包含北京公交线名的文件：**Network_bus.txt**，可以直接运行beijing_bus.py程序，获得各线路的途径站及经纬度坐标。
+我提供了一份包含北京公交线名的文件：**Network_bus.txt**。
+beijing_bus.py程序不可直接运行，须在高德api中获取key值，填入代码中对应地方才可运行，以获得各线路的途径站及经纬度坐标。
 xianming.py程序可以直接运行获得指定城市的公交线名。
 
 
