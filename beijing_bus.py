@@ -63,7 +63,8 @@ for k in range(len(xm)-1):
     aarray = []
     barray = []
     line = xm[k]
-    url = 'https://restapi.amap.com/v3/bus/linename?s=rsv3&extensions=all&key=a5b7479db5b24fd68cedcf24f482c156&output=json&city={}&offset=0&keywords={}&platform=JS'.format(cityname,line)
+    key = '' #key 较为重要，此处不提供，可自行在高德地图申请
+    url = 'https://restapi.amap.com/v3/bus/linename?s=rsv3&extensions=all&key={}=json&city={}&offset=0&keywords={}&platform=JS'.format(cityname,key,line)
     r = requests.get(url).text
     rt = json.loads(r)
     try:
